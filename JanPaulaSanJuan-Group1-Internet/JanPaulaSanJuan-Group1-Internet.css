@@ -1,0 +1,149 @@
+.container{
+    background: linear-gradient(#e3e3e3, white, white, white);
+    width: 970px;
+}
+header{
+    background-color: white;
+}
+header img{
+    display: inline;
+    vertical-align: middle;
+    margin-bottom: 0px;
+    height: 80px;
+}
+header h1{
+    display: inline;
+    vertical-align: middle;
+    font-size: 50px;
+}
+header span{
+    color: #22659e;
+}
+header h2{
+    color: white;
+    background: linear-gradient(#26689f, #5182ac, #26689f);
+    padding: 10px;
+    margin: 0px;
+}
+h3 span{
+    color: #da322c;
+}
+div.resources{
+    width: 230px;
+    display: inline-block;
+    vertical-align: top;
+    color: black;
+    text-align: center;
+}
+div.ad{
+    background-image: url("images/ad_background.png");
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    height: 360px;
+}
+.ad img{
+    width: 110px;
+    height: 160px;
+    margin: 0px auto;
+    display: block;
+}
+.ad h1{
+    margin: 0px;
+}
+div.resources div{
+    margin-bottom: 20px;
+}
+div.resources div h3 a{
+    border-right: 2px solid #938d87;
+    border-bottom: 2px solid #938d87;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 180px;
+    display: block;
+}
+h3 a.watch{
+    background: #3170a6;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+h3 a.more_src{
+    background: #ef8100;
+    padding: 10px;
+}
+div.ad h3 a{
+    background: linear-gradient(#75cfdf, #00c1df);
+    padding: 10px;
+    width: 85px;
+}
+div.resources div, div.contact{
+    border-bottom: 2px solid #cacaca;
+}
+div.contact p.dns img{
+    height: 20px;
+}
+div.content div.contact p.dns{
+    margin: 10px 370px 0px 0px;
+    display: inline;
+    vertical-align: middle;
+}
+div.content div.contact img, .numbers img, .numbers p{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: small;
+}
+.numbers p{
+    width: 200px;
+}
+.numbers span{
+    font-size: x-large;
+}
+.numbers{
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    margin: 0px;
+}
+div.contact .numbers img{
+    height: 40px;
+}
+div.content h3{
+    color: #2a6aa1;
+}
+div.content{
+    width: 680px;
+    margin-left: 30px;
+    margin-right: 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+div.contact{
+    height: 60px;
+}
+div.content img{
+    margin-left: 200px;
+    height: 100px;
+}
+span, .content a{
+    color: #35acbf;
+}
+footer{
+    width: 670px;
+    height: 120px;
+    border: 5px solid #0085e0;
+}
+div.content footer img, div.content footer div{
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+div.content footer h3, footer p{
+    width: 500px;
+    margin: 0px;
+}
