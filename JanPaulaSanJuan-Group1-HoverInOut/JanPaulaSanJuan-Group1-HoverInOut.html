@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JanPaulaSanJuan-Group1-HoverIn/Out</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="JanPaulaSanJuan-Group1-HoverInOut.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('img').hover(function(){
+					var temp=$(this).attr('data-alt-src');
+                    $(this).attr('data-alt-src', $(this).attr('src'));
+                    $(this).attr('src', temp);
+				}, function(){
+					var temp=$(this).attr('data-alt-src');
+                    $(this).attr('data-alt-src', $(this).attr('src'));
+                    $(this).attr('src', temp);
+				});
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Jan Paula S. San Juan - Group 1 - Hover In / Out</h1>
+        <img src="Dante-DevilMayCry3.png" alt="Different Versions of Dante from Devil May Cry" data-alt-src="Dante-DmC.png">
+        <img src="Trish-DevilMayCry4.png" alt="Trish and Eva from Devil May Cry" data-alt-src="Eva-DevilMayCry.png">
+        <img src="Vergil-DevilMayCry5.png" alt="Vergil from Devil May Cry" data-alt-src="V-DevilMayCry5.png">
+        <img src="SamusInsidePowerSuit.png" alt="Samus Aran from Metroid Fusion" data-alt-src="SamusOutsidePowerSuit.png">
+    </body>
+</html>

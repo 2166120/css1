@@ -1,0 +1,12 @@
+button{
+    background-color: green;
+    box-shadow: 5px, 10px;
+    text-align: center;
+    display: block;
+}
+img{
+    width: 300px;
+    height: 400px;
+    display: inline-block;
+    margin: 20px;
+}
