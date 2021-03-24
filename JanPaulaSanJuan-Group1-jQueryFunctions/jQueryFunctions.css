@@ -1,0 +1,13 @@
+img{
+    height: 300px;
+}
+div.val{
+    color: pink;
+}
+div{
+    border-bottom: 5px solid gray;
+    text-align: center;
+}
+button{
+    border: 10px solid black;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="jQueryFunctions.css">
+        <title>My jQuery basic assignment!</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // your jquery codes here
+                $('.add_class button').click(function(){
+                    $('.add_class p').addClass('red');
+                    $('.add_class p').css('color', 'red');
+                    console.log('red');
+                });
+                $('.toggle button').click(function(){
+                    $('.show img').toggle('slow');
+                });
+                $('.append button').click(function(){
+                    $('.append p').append('Do you want a Golden Experience? MudaMuda! Wryyyy!');
+                });
+                $('.click button').click(function(){
+                    $('.click span').css('color', 'red');
+                });
+                $('.hide button').click(function(){
+                    $('img').hide();
+                });
+                $('.show button').click(function(){
+                    $('img').show();
+                });
+                $('.slide_toggle button').click(function(){
+                    $('.slide_toggle img').toggle('slow');
+                });
+                $('.slide_down button').click(function(){
+                    $('.slide_down img').slideDown('slow');
+                });
+                $('.slide_up button').click(function(){
+                    $('.slide_down img').slideUp('slow');
+                });
+                $('.fade_in button').click(function(){
+                    $('.fade_in img').fadeIn('slow');
+                });
+                $('.fade_out button').click(function(){
+                    $('.fade_in img').fadeOut('slow');
+                });
+                $('.html button').click(function(){
+                    $('h1').html('Is 1942 Making Bird Flappy Today?');
+                });
+                $('.val button').click(function(){
+                    $('input:text').val('pink');
+                });
+                $('.attr button').click(function(){
+                    $('.val input').attr('placeholder','light red');
+                });
+                $('.text button').click(function(){
+                    $('p').text('I love cute Pac-man and Ghosts!');
+                });
+                $('.before button').click(function(){
+                    $('.before p').before("<p>JoJo's Bizarre Adventure! Golden Wind!</p><img src='Giorno_Giovanna_Infobox_Anime.png' alt='Giorno Giovanna'>");
+                });
+                $('.after button').click(function(){
+                    $('.after p').after('<p>I, Giorno Giovanna, have a dream.</p><img src="Giorno_Giovanna_Infobox_Anime.png" alt="Giorno Giovanna">');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="add_class">
+            <h1>AddClass</h1>
+            <button>AddClass</button>
+            <p>Click the button to add class 'red' to this paragraph.</p>
+        </div>
+        <div class="slide_toggle">
+            <h1>SlideToggle</h1>
+            <button>SlideToggle</button>
+            <p>Click the button to slide toggle a hidden image.<img src="Giorno_Giovanna_Infobox_Anime.png" alt="Giorno Giovanna"></p>
+        </div>
+        <div class="append">
+            <h1>Append</h1>
+            <button>Append</button>
+            <p>Click the button to append a new paragraph!</p>
+        </div>
+        <div class="click">
+            <h1>Click</h1>
+            <button>Click</button>
+            <p><span>Click</span> the button to highlight the word '<span>Click</span>'.</p>
+        </div>
+        <div class="hide">
+            <h1>Hide</h1>
+            <button>Hide</button>
+            <p>Click the button to hide all of the images here.</p>
+        </div>
+        <div class="show">
+            <h1>Show</h1>
+            <button>Show</button>
+            <p>Click the button to show all of the images.<img src="Giorno_Giovanna_Infobox_Anime.png" alt="Giorno Giovanna"></p>
+        </div>
+        <div class="toggle">
+            <h1>Toggle</h1>
+            <button>Toggle</button>
+            <p>Click the button to toggle an image.</p>
+        </div>
+        <div class="slide_down">
+            <h1>SlideDown</h1>
+            <button>SlideDown</button>
+            <p>Click the button to slide down an image.</p>
+            <img src="Giorno_Giovanna_Infobox_Anime.png" alt="Giorno Giovanna">
+        </div>
+        <div class="slide_up">
+            <h1>SlideUp</h1>
+            <button>SlideUp</button>
+            <p>Click the button to slide up an image.</p>
+        </div>
+        <div class="fade_in">
+            <h1>FadeIn</h1>
+            <button>FadeIn</button>
+            <p>Click the button to fade in an image.</p>
+            <img src="Giorno_Giovanna_Infobox_Anime.png" alt="Giorno Giovanna">
+        </div>
+        <div class="fade_out">
+            <h1>FadeOut</h1>
+            <button>FadeOut</button>
+            <p>Click the button to fade out an image.</p>
+        </div>
+        <div class="before">
+            <h1>Before</h1>
+            <button>Before</button>
+            <p>Click the button to add a sentence and an image before this paragraph.</p>
+        </div>
+        <div class="after">
+            <h1>After</h1>
+            <button>After</button>
+            <p>Click the button to add a sentence and picture after this paragraph.</p>
+        </div>
+        <div class="html">
+            <h1>HTML</h1>
+            <button>HTML</button>
+            <p>Click the button to change this paragraph.</p>
+        </div>
+        <div class="attr">
+            <h1>Attr</h1>
+            <button>Attr</button>
+            <p>Click the button to edit the value of the attribute of the input of the val division below in this <span>span</span>.</p>
+        </div>
+        <div class="val">
+            <h1>Val</h1>
+            <button>Val</button>
+            <p>Click the button to see the color value of this </p><input text="text" id="color" name="color" placeholder="input">.
+        </div>
+        <div class="text">
+            <h1>Text</h1>
+            <button>Text</button>
+            <p>Click the button to change a text in this paragraph</p>
+        </div>
+    </body>
+</html>
