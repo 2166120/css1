@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JanPaulaSanJuan-Group1-NinjaToCat</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="JanPaulaSanJuan-Group1-NinjaToCat.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('img').click(function() {
+                    console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+                    $(this).fadeOut('slow');
+                    var temp=$(this).attr('data-alt-src');
+                    $(this).attr('data-alt-src', $(this).attr('src'));
+                    $(this).attr('src', temp);
+                    $(this).fadeIn('slow');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>JanPaulaSanJuan-Group1-NinjaToCat</h1>
+        <img src="img/ninja0.png" data-alt-src="img/cat0.png"/>
+        <img src="img/ninja1.png" data-alt-src="img/cat1.png"/>
+        <img src="img/ninja2.png" data-alt-src="img/cat2.png"/>
+        <img src="img/ninja3.png" data-alt-src="img/cat3.png"/>
+        <img src="img/ninja4.png" data-alt-src="img/cat4.png"/>
+    </body>
+</html>
