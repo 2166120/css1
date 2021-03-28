@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Jan Paula S. San Juan-Group 1-Date Validations</title>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+        <link rel="stylesheet" href="/resources/demos/style.css"/>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".from").datepicker();
+                $("#submit").click(function(){
+                    if(!$("#name").val()||!$("#datepicker").val()){
+                        $("p.name").append("<p style='color:red;display:inline;'>Your name and dates can't be blank!</p>");
+                    }
+                    else{
+                        alert("Thanks "+$("#name:text").val()+"! Your cruise leaves on "+$(".from:text").val()+" and returns on "+$(".to").val()+"!");
+                    }
+                    $("form").submit(function(){
+                        return false;
+                    });
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+            <h1>Welcome to the Codingdojo plan-a-Cruise!</h1>
+            <p>From: <input type="text" id="datepicker" class="from" name="date"/></p>
+            <p>To: <input type="date" id="datepicker" class="to" name="date"/></p>
+            <p class="name">Name: <input type="text" id="name" name="name"/></p>
+            <input id="submit" class="ui-button ui-widget ui-corner-all" type="submit" value="Check dates!"/>
+        </form>
+    </body>
+</html>
