@@ -18,8 +18,8 @@ SELECT DISTINCT country.Name AS country, countrylanguage.language, countrylangua
 /**9. Get all the list of countries (display the full country name and the full language name) and their official language.  Order the result so that those with the same official language are shown together.**/
 SELECT DISTINCT country.Name AS country, countrylanguage.language, countrylanguage.isofficial FROM country INNER JOIN countrylanguage WHERE countrylanguage.IsOfficial = 'T';
 /**10. Get the top 100 cities with the most population.  Display the city's full country name also as well as their official language.**/
-SELECT DISTINCT city.Name AS city_name, country.Name AS country_name, countrylanguage.language, isofficial, city.population FROM city INNER JOIN country INNER JOIN countrylanguage WHERE IsOfficial = 'T' ORDER BY city.Population DESC LIMIT 100;
+SELECT city.Name AS city_name, country.Name AS country_name, language, isofficial, city.population FROM city INNER JOIN country INNER JOIN countrylanguage WHERE country.Code = city.CountryCode AND IsOfficial = 'T' ORDER BY city.Population DESC LIMIT 100;
 /**11. Get the top 100 cities with the most population where the life_expectancy for the country is less than 40.**/
-SELECT DISTINCT city.Name AS city_name, country.Name AS country_name, lifeexpectancy, city.population FROM city INNER JOIN country INNER JOIN country INNER JOIN countrylanguage WHERE LifeExpectancy < 40 LIMIT 100;
+SELECT city.Name AS city_name, country.Name AS country_name, lifeexpectancy, city.population FROM city INNER JOIN country INNER JOIN countrylanguage WHERE country.Code = city.CountryCode AND LifeExpectancy < 40 LIMIT 100;
 /**12. Get the top 100 countries who speak English and where life expectancy is highest.  Show the country with the highest life expectancy first.**/
-SELECT DISTINCT country.Name AS country_name, city.Name AS city_name, lifeexpectancy FROM country INNER JOIN city INNER JOIN countrylanguage WHERE countrylanguage.Language = 'English' ORDER BY LifeExpectancy DESC LIMIT 100;
+SELECT DISTINCT country.Name AS country_name, city.Name AS city_name, lifeexpectancy FROM city INNER JOIN country INNER JOIN countrylanguage WHERE country.Code = city.CountryCode AND countrylanguage.Language = 'English' ORDER BY LifeExpectancy DESC LIMIT 100;
