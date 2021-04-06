@@ -1,0 +1,43 @@
+<html>
+    <body>
+        <div id="background" style="width: 900px; height: 750px; background-image: url('img/white_bg.jpg');">
+          <div id="character" style="width: 59px; height: 86px; background-image: url('img/down1.png'); position: absolute; left: 150px; top: 150px;">
+		  </div>  
+        </div>
+
+    <script type="text/javascript">
+	    var leftValue = 150, topValue = 150, walkValue = 1;
+    	document.onkeydown = function(e){
+    		console.log(e);
+			//2. Change the walkValue in order to make the Ninja look like he or she is walking.
+			if (walkValue == 1) {
+				walkValue = 2;
+			}
+			else if (walkValue == 2){
+				walkValue = 1;
+			}
+    		if(e.keyCode == 37) { // LEFT
+    			leftValue = leftValue - 25;
+				document.getElementById("character").style.left = leftValue+"px";
+				document.getElementById("character").style.backgroundImage = "url('img/left"+walkValue+".png')";
+    		}
+    		else if (e.keyCode == 39) { // RIGHT
+    			leftValue = leftValue + 25;
+				document.getElementById("character").style.left = leftValue+"px";
+				document.getElementById("character").style.backgroundImage = "url('img/right"+walkValue+".png')";
+    		}
+    		else if (e.keyCode == 40) { // DOWN
+				topValue = topValue + 25;
+				document.getElementById("character").style.top = topValue+"px";
+				document.getElementById("character").style.backgroundImage = "url('img/down"+walkValue+".png')";
+    		}
+    		// ...
+			else if (e.keyCode == 38) { 
+				topValue -= 25;
+				document.getElementById("character").style.top = topValue+"px";
+				document.getElementById("character").style.backgroundImage = "url('img/top"+walkValue+".png')"; //1. This is how to add the direction of top.
+			}
+    	}
+    </script>
+</body>
+</html>
