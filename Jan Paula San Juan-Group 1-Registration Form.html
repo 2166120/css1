@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Registration Form</title>
+        <meta name="description" content="">
+    </head>
+    <body>
+        <form>
+            <h1>Registration Form</h1>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <label for="pw_confirm">Confirm Password:</label>
+            <input type="password" id="pw_confirm" name="password_confirmation">
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="decline" name="gender" value="decline">
+            <label for="decline">I prefer not to answer</label>
+            <p>A short description about myself:</p>
+            <textarea name="description"></textarea>
+            <label for="language">Favorite Language:</label>
+            <select id="language" name="language">
+                <option value="javascript">JavaScript</option>
+            </select>
+            <input type="checkbox" id="yes_email" name="yes_email">
+            <label for="yes_email">Yes, I would like to receive periodic email updates</label>
+            <input type="submit" value="Create Account">
+        </form>
+    </body>
+</html>
