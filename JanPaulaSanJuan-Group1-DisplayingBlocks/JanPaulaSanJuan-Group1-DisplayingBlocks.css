@@ -1,0 +1,46 @@
+div{
+    width: 711px;
+    height: 649px;
+    background-color: #d4d2ae;
+    overflow: hidden;
+}
+header{
+    text-align: center;
+}
+div header img{
+    height: 35px;
+    width: 89px;
+    display: inline;
+    background-color: white;
+    outline: 0px;
+    margin-top: 20px;
+    vertical-align: bottom;
+}
+h1{
+    display: inline;
+}
+.pictures {
+    display: inline-flex;
+    margin: 10px;
+    width: 690px;
+    text-align: center;
+    vertical-align: top;
+}
+.line{
+    display: inline-block;
+}
+.altline{
+    display: inline-block;
+}
+div img{
+    display: inline-flex;
+    width: 108px;
+    height: 108px;
+    margin-top: 5px;
+    padding: 10px;
+    outline: 3px solid black;
+    background-color: #82b4ee;
+}
+div .altline img{
+    background-color: #f36870;
+}
