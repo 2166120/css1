@@ -1,0 +1,143 @@
+body{
+    width: 970px;
+}
+header{
+    background-color: #245076;
+    display: inline-block;
+    vertical-align: top;
+    width: 970px;
+}
+div.search{
+    width: 353px;
+    right: 0px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+}
+.search p{
+    display: inline;
+    color: white;
+    margin-right: 40px;
+}
+.search a{
+    color: #f2cc33;
+    text-decoration: underline;
+}
+div.nav_menu{
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+h3{
+    margin: 10px;
+}
+div{
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+div.quotes{
+    width: 600px;
+    margin: 0px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.quotes h2{
+    margin-top: 10px;
+}
+div.menu{
+    background-color: #487ead;
+    border-radius: 5px;
+    border-right: 3px solid #26292a;
+    border-bottom: 3px solid #26292a;
+    padding: 10px 0px;
+    margin-left: 70px;
+    margin-bottom: 0px;
+    width: 865px;
+}
+.menu h1{
+    color: white;
+    font-style: normal;
+    font-size: x-large;
+    display: inline;
+    margin: 20px;
+}
+h1{
+    color: #f2cc33;
+    font-style: italic;
+    margin: 5px;
+}
+form{
+    width: 320px;
+    background-color: #444444;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    border-right: 3px solid #26292a;
+    border-bottom: 3px solid #26292a;
+    display: inline-block;
+}
+#search{
+    text-align: center;
+    padding: 10px 5px;
+    outline: 2px solid #8b8b8b;
+}
+#submit{
+    color: white;
+    background-color: #245076;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+img{
+    height: 90px;
+    margin: 20px 240px 10px 30px;
+}
+div.guide{
+    background-color: white;
+    margin: 0px;
+}
+.guide div{
+    background-color: white;
+    color: black;
+    width: 400px;
+    text-align: center;
+    margin: 0px 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.guide div h2{
+    border-top: 4px solid #73a7d5;
+}
+.guide div p{
+    width: 300px;
+    margin-left: 20px;
+}
+.guide div ul{
+    width: 250px;
+    margin-left: 20px;
+}
+.guide div ul li{
+    text-decoration: none;
+    list-style-type: square;
+}
+.guide a{
+    color: #6498c8;
+}
+footer{
+    height: 65px;
+    background: linear-gradient(#29557a, #3374ac);
+    color: #6098c8;
+    text-align: center;
+    padding-top: 50px;
+}
+footer h2{
+    display: inline;
+    margin-right: 40px;
+}
