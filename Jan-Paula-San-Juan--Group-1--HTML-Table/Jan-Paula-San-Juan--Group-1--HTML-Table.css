@@ -1,0 +1,15 @@
+span {
+	font-weight: normal;
+}
+th, td {
+	padding: 10px;
+	outline: 1px solid lightgray;
+	font-size: large;
+}
+thead, .user {
+	font-weight: bold;
+}
+.fifth {
+	background-color: black;
+	color: white;
+}
