@@ -21,9 +21,9 @@
 					}
 				}
 				if($color == 1) {
-						$color = 2;
+					$color = 2;
 				} else {
-						$color = 1;
+					$color = 1;
 				}	?>
 			</div>
 <?php		}	?>
