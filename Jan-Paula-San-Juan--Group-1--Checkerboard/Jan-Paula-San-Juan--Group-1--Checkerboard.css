@@ -1,0 +1,27 @@
+div.board1, div.board2 {
+	margin: 15px;
+	outline: 2px solid gray;
+	display: inline-block;
+	vertical-align: top;
+}
+div.row {
+	font-size: 0px;
+	margin: 0px;
+}
+.board1 .color1, .board1 .color2, .board2 .color1, .board2 .color2 {
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+}
+.board1 .color1 {
+	background-color: red;
+}
+.board1 .color2 {
+	background-color: black;
+}
+.board2 .color1 {
+	background-color: white;
+}
+.board2 .color2 {
+	background-color: green;
+}
