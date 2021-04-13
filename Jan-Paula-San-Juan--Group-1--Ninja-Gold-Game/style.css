@@ -1,0 +1,27 @@
+body {
+	text-align: center;
+	margin: auto;
+}
+form {
+	display: inline-block;
+	vertical-align: top;
+	padding: 20px;
+	text-align: center;
+	outline: 2px solid black;
+	margin: 20px;
+}
+.ouch {
+	color: red;
+}
+div {
+	height: 160px;
+	width: 970px;
+	outline: 2px solid black;
+	overflow: scroll;
+	margin: auto;
+}
+span {
+	width: 100px;
+	outline: 2px solid black;
+	padding: 10px;
+}
