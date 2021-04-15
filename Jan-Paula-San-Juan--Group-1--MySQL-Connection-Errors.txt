@@ -1,0 +1,14 @@
+Failed to connect to MySQL: (2002) php_network_getaddresses: getaddrinfo failed: No such host is known.
+fix: Change the empty host string or host 'Dio' to 'localhost'.
+
+Failed to connect to MySQL: (1045) Access denied for user 'Dio'@'localhost' (using password: YES)
+fix: Make a user 'Dio' in MySQL Workbench.
+
+Failed to connect to MySQL: (1045) Access denied for user 'root'@'localhost' (using password: YES)
+fix: Just make the password string empty if there aren't any.
+
+Failed to connect to MySQL: (1049) Unknown database 'cute'
+fix: Make a 'cute' schema in MySQL Workbench or phpMyAdmin.
+
+Failed to connect to MySQL: (2002) php_network_getaddresses: getaddrinfo failed: No such host is known.
+fix: Define the host, user, password, and database.
