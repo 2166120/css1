@@ -1,0 +1,30 @@
+body{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    background: radial-gradient(circle, green, yellow, black);
+}
+body *{
+    background: linear-gradient(yellow, yellowgreen);
+}
+img {
+    height: 400px;
+}
+h2{
+    background-color: yellow;
+    outline: 5px solid green;
+    padding: 10px;
+}
+#accordion, form{
+    background: linear-gradient(lightyellow, yellowgreen);
+}
+#tabs ul li{
+    display: inline;
+    outline: 3px solid green;
+    background-color: yellow;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
