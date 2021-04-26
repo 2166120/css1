@@ -16,15 +16,13 @@
 			<p>Email: <input type="text" name="email"/></p>
 			<input type="submit" name="submit"/>
 		</form>
-<?php
-	if(isset($_SESSION["errors"])) {
-		foreach($_SESSION["errors"] as $error) {
-?>
-		<div><?= $error ?></div>
+		<div>
+<?php	if(!empty($_SESSION["errors"])) {	?>
+			<?= $_SESSION["errors"] ?>
 <?php
 		}
 		$_SESSION=array();
-	}
 ?>
+		</div>
 	</body>
 </html>
