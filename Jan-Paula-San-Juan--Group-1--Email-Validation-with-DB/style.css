@@ -1,0 +1,12 @@
+body {
+	text-align: center;
+}
+div {
+	background-color: green;
+	padding: 10px 15px;
+	outline: 2px solid black;
+	color: white;
+}
+h1 {
+	text-decoration: underline;
+}
