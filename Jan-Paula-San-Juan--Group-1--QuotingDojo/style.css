@@ -1,0 +1,43 @@
+body {
+	background: radial-gradient(circle, green, yellow);;
+}
+div {
+	background-color: white;
+	width: 70%;
+	margin: auto;
+	padding: 20px 0px;
+}
+form {
+	margin: 1%;
+}
+h1 {
+	text-align: center;
+}
+textarea {
+	vertical-align: top;
+	width: 90%;
+	height: 150px;
+	overflow: scroll;
+}
+#submit, a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: black;
+	outline: 1px solid black;
+	border: 0px 2px 2px 0px solid black;
+	padding: 5px 8px;
+}
+a {
+	float: right;
+	margin: 20px;
+}
+div div {
+	padding-left: 20px;
+	border-bottom: 2px solid black;
+	width: 90%;
+	margin-bottom: 1%;
+}
+p.name {
+	margin-left: 10%;
+}
