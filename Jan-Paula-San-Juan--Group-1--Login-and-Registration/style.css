@@ -1,0 +1,22 @@
+* {
+	font-family: sans-serif;
+}
+.error {
+	color: red;
+}
+.success {
+	color: green;
+}
+body {
+	background: radial-gradient(circle, green, yellow);
+}
+div {
+	background-color: white;
+	width: 70%;
+	margin: auto;
+	padding: 20px 0px;
+}
+form {
+	margin: 1%;
+	background-color: white;
+}
