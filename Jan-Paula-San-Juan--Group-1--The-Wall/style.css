@@ -1,0 +1,50 @@
+* {
+	font-family: sans-serif;
+}
+.error {
+	color: red;
+}
+.success {
+	color: green;
+}
+body {
+	background: radial-gradient(circle, green, yellow);
+}
+div.container {
+	background-color: white;
+	width: 70%;
+	margin: auto;
+	padding: 20px 0px;
+}
+div.message_comment {
+	padding-left: 10%;
+	background-color: lightblue;
+}
+form {
+	margin: 1%;
+	background-color: white;
+}
+header {
+    background-color: #245076;
+	color: white;
+	display: inline-block;
+    vertical-align: top;
+}
+header div.user_menu{
+    width: 33%;
+    right: 0px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+}
+.user_menu p{
+    display: inline;
+    color: white;
+    margin-right: 0.5%;
+}
+.user_menu a{
+	display: inline;
+    color: #f2cc33;
+    text-decoration: underline;
+}
