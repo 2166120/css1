@@ -21,7 +21,7 @@ class Bike {
   }
   public function displayInfo() {
     echo "<p>Price: ".$this->price."</p>";
-	echo "<p>Max Strength: ".$this->max_speed."</p>";
+	echo "<p>Max Speed: ".$this->max_speed."</p>";
 	echo "<p>Miles: ".$this->miles."</p>";
   }
   public function drive() {
@@ -36,8 +36,8 @@ class Bike {
   }
 }
 $bike1=new Bike(1, 1);
-$bike2=new Bike(1, 1);
-$bike3=new Bike(1, 1);
+$bike2=new Bike(2, 2);
+$bike3=new Bike(3, 3);
 
 $bike1->drive();
 $bike1->drive();
