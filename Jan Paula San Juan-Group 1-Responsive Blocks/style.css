@@ -1,0 +1,131 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+@media only screen and (max-width: 480px){
+	#wrapper{
+		max-width: 950px;
+		background-color: silver;
+		margin: 0px auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#header{
+		min-height: 150px;
+		background-color: green;
+		margin: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	#navigation{
+		display: none;
+	}
+	#main_content{
+		min-height: 400px;
+		background-color: red;
+		margin: 20px;
+		padding-bottom: 20px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.subcontents{
+		height: 100px;
+		background-color: yellow;
+		margin: 10px;
+		display: block;
+	}
+	#advertisement{
+		min-height: 120px;
+		background-color: purple;
+		margin: 0px 20px;
+		display: block;
+	}
+}
+@media only screen and (min-width: 481px){
+	#wrapper{
+		max-width: 950px;
+		background-color: silver;
+		margin: 0px auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#header{
+		min-height: 150px;
+		background-color: green;
+		margin: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	#navigation{
+		display: none;
+	}
+	#main_content{
+		min-height: 400px;
+		background-color: red;
+		margin: 20px;
+		padding-bottom: 20px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.subcontents{
+		height: 100px;
+		width: 190px;
+		background-color: yellow;
+		margin: 20px 10px;
+		display: inline-block;
+	}
+	#advertisement{
+		min-height: 120px;
+		background-color: purple;
+		margin: 0px 20px;
+		display: block;
+	}
+}
+@media only screen and (min-width: 1024px){
+	#wrapper{
+		width: 950px;
+		background-color: silver;
+		margin: 0px auto;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	#header{
+		min-height: 150px;
+		background-color: green;
+		margin: 20px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	#navigation{
+		min-height: 300px;
+		width: 200px;
+		background-color: blue;
+		margin: 20px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	#main_content{
+		min-height: 400px;
+		width: 660px;
+		background-color: red;
+		margin-top: 20px;
+		padding-bottom: 20px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.subcontents{
+		min-height: 200px;
+		width: 190px;
+		background-color: yellow;
+		margin: 20px;
+		margin-right: 0px;
+		display: inline-block;
+	}
+	#advertisement{
+		min-height: 120px;
+		width: 620px;
+		background-color: purple;
+		margin-left: 20px;
+		display: inline-block;
+	}
+}
